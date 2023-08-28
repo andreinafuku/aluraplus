@@ -1,0 +1,156 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --cinza-terciario: #F9F9F9;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display:block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color: red;
+}
+
+.container__descricao{
+    margin-right: 6em;
+    margin-left: 6em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    border-radius: 8px;
+}
+
+.botao_secundario:hover{
+    border: 2px solid red;
+}
+
+.secundario__imagem {
+    margin: 0 6em;
+}
+
+.container__aviso{
+    font-size: 12px;
+    /* color: var(--cinza-secundario); */
+    color: var(--cinza-secundario)
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    font-size: 16px;
+    color: var(--cinza-terciario);
+    text-align: left;
+}
+
+.bota_terciario{
+    width: 162px;
+    margin-top: 1em;
+}
+
+.terciario__imagem {
+    margin: 0 6em;
+}
+
+.dispositivos{
+    text-align: center;
+    columns: var(--branco-principal);
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista{
+    font-size: 32px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content:center;
+    margin-top: 1em;
+    list-style-type: none;
+    /* margin: 1em 6em 0 6em; */
+}
+
+.lista__link a {
+    font-size: 16px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.lista__link a:hover{
+    color: #04c604;
+}
+
+.rodape__texto{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+}
